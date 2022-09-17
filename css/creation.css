@@ -1,0 +1,78 @@
+@import "header.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type=text], input[type=number] {
+    width: 45vw;
+    height: 8vh;
+    outline-color: gray;
+    padding: 0 1vw;
+    border-radius: 1vw;
+    margin-bottom: 5vh;
+    font-weight: bold;
+    border: none;
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+input[type=text]::placeholder, input[type=number]::placeholder {
+    color: black
+}
+
+button {
+    height: 10vh;
+    width: 45vw;
+    border-radius: 1vw;
+    margin-top: -2%;
+    margin-left: 27.5%;
+    border: none;
+    color: black;
+    background-color: lightgoldenrodyellow;
+    font-weight: bold;
+    animation-name: riseAndFall;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes riseAndFall {
+    0% {margin-top: 0vh;}
+    50% {margin-top: 5vh;}
+    100% {margin-top: 0vh;}
+}
+
+button:hover {
+    border: 0.2vw solid gray;
+    background-color: transparent;
+    color: black;
+}
+
+.alert {
+    width: 0;
+    height: 25vh;
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: 3vw;
+    top: 10vh;
+    transition: 1s;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third lab from web </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dealership</h1>
+        <button onclick="toCreatePage()">create</button>
+    </header>
+    <main>
+        <aside>
+            <div class="searchSec">
+                <input type="text" id="search" placeholder="Search...">
+                <button onclick="searchCar()">Search</button>
+            </div>
+            <h2>Sort by:</h2>
+            <div class="sortCat">
+                <input type="checkbox" id="name" onclick="sortByName()">
+                <label for="name">name</label>
+            </div>
+            <div class="sortCat">
+                <input type="checkbox" id="price" onclick="sortByPrice()">
+                <label for="price">price</label>
+            </div>
+            <p>Total price: <span id="totalPrice"></span></p>
+        </aside>
+        <div class="content"></div>
+    </main>
+    <div class="alert" onclick="hideAlert()"></div>
+    <script src="logic/main.js"></script>
+</body>
+</html>
